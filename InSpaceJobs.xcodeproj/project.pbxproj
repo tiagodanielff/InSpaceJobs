@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F114F1D117C6C14000903F79 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F114F1D017C6C14000903F79 /* UIKit.framework */; };
+		F114F1D317C6C14000903F79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F114F1D217C6C14000903F79 /* Foundation.framework */; };
+		F114F1D517C6C14000903F79 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F114F1D417C6C14000903F79 /* CoreGraphics.framework */; };
+		F114F1DB17C6C14000903F79 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F114F1D917C6C14000903F79 /* InfoPlist.strings */; };
+		F114F1DD17C6C14000903F79 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F114F1DC17C6C14000903F79 /* main.m */; };
+		F114F1E117C6C14000903F79 /* ISJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F114F1E017C6C14000903F79 /* ISJAppDelegate.m */; };
+		F114F1E317C6C14000903F79 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F114F1E217C6C14000903F79 /* Default.png */; };
+		F114F1E517C6C14000903F79 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F114F1E417C6C14000903F79 /* Default@2x.png */; };
+		F114F1E717C6C14000903F79 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F114F1E617C6C14000903F79 /* Default-568h@2x.png */; };
+		F114F1EA17C6C14000903F79 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F114F1E817C6C14000903F79 /* MainStoryboard_iPhone.storyboard */; };
+		F114F1ED17C6C14000903F79 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F114F1EB17C6C14000903F79 /* MainStoryboard_iPad.storyboard */; };
+		F114F1F017C6C14000903F79 /* ISJFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F114F1EF17C6C14000903F79 /* ISJFirstViewController.m */; };
+		F114F1F217C6C14000903F79 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = F114F1F117C6C14000903F79 /* first.png */; };
+		F114F1F417C6C14000903F79 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F114F1F317C6C14000903F79 /* first@2x.png */; };
+		F114F1F717C6C14000903F79 /* ISJSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F114F1F617C6C14000903F79 /* ISJSecondViewController.m */; };
+		F114F1F917C6C14000903F79 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = F114F1F817C6C14000903F79 /* second.png */; };
+		F114F1FB17C6C14000903F79 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F114F1FA17C6C14000903F79 /* second@2x.png */; };
+		F114F20317C6C14000903F79 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F114F20217C6C14000903F79 /* SenTestingKit.framework */; };
+		F114F20417C6C14000903F79 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F114F1D017C6C14000903F79 /* UIKit.framework */; };
+		F114F20517C6C14000903F79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F114F1D217C6C14000903F79 /* Foundation.framework */; };
+		F114F20D17C6C14000903F79 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F114F20B17C6C14000903F79 /* InfoPlist.strings */; };
+		F114F21017C6C14000903F79 /* InSpaceJobsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F114F20F17C6C14000903F79 /* InSpaceJobsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F114F20617C6C14000903F79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F114F1C317C6C14000903F79 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F114F1CB17C6C14000903F79;
+			remoteInfo = InSpaceJobs;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F114F1CC17C6C14000903F79 /* InSpaceJobs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InSpaceJobs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F114F1D017C6C14000903F79 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F114F1D217C6C14000903F79 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F114F1D417C6C14000903F79 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F114F1D817C6C14000903F79 /* InSpaceJobs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InSpaceJobs-Info.plist"; sourceTree = "<group>"; };
+		F114F1DA17C6C14000903F79 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F114F1DC17C6C14000903F79 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F114F1DE17C6C14000903F79 /* InSpaceJobs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InSpaceJobs-Prefix.pch"; sourceTree = "<group>"; };
+		F114F1DF17C6C14000903F79 /* ISJAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISJAppDelegate.h; sourceTree = "<group>"; };
+		F114F1E017C6C14000903F79 /* ISJAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISJAppDelegate.m; sourceTree = "<group>"; };
+		F114F1E217C6C14000903F79 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F114F1E417C6C14000903F79 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		F114F1E617C6C14000903F79 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F114F1E917C6C14000903F79 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		F114F1EC17C6C14000903F79 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		F114F1EE17C6C14000903F79 /* ISJFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISJFirstViewController.h; sourceTree = "<group>"; };
+		F114F1EF17C6C14000903F79 /* ISJFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISJFirstViewController.m; sourceTree = "<group>"; };
+		F114F1F117C6C14000903F79 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		F114F1F317C6C14000903F79 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		F114F1F517C6C14000903F79 /* ISJSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISJSecondViewController.h; sourceTree = "<group>"; };
+		F114F1F617C6C14000903F79 /* ISJSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISJSecondViewController.m; sourceTree = "<group>"; };
+		F114F1F817C6C14000903F79 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		F114F1FA17C6C14000903F79 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		F114F20117C6C14000903F79 /* InSpaceJobsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InSpaceJobsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F114F20217C6C14000903F79 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		F114F20A17C6C14000903F79 /* InSpaceJobsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InSpaceJobsTests-Info.plist"; sourceTree = "<group>"; };
+		F114F20C17C6C14000903F79 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F114F20E17C6C14000903F79 /* InSpaceJobsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InSpaceJobsTests.h; sourceTree = "<group>"; };
+		F114F20F17C6C14000903F79 /* InSpaceJobsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InSpaceJobsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F114F1C917C6C14000903F79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F114F1D117C6C14000903F79 /* UIKit.framework in Frameworks */,
+				F114F1D317C6C14000903F79 /* Foundation.framework in Frameworks */,
+				F114F1D517C6C14000903F79 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F114F1FD17C6C14000903F79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F114F20317C6C14000903F79 /* SenTestingKit.framework in Frameworks */,
+				F114F20417C6C14000903F79 /* UIKit.framework in Frameworks */,
+				F114F20517C6C14000903F79 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F114F1C117C6C14000903F79 = {
+			isa = PBXGroup;
+			children = (
+				F114F1D617C6C14000903F79 /* InSpaceJobs */,
+				F114F20817C6C14000903F79 /* InSpaceJobsTests */,
+				F114F1CF17C6C14000903F79 /* Frameworks */,
+				F114F1CD17C6C14000903F79 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F114F1CD17C6C14000903F79 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F114F1CC17C6C14000903F79 /* InSpaceJobs.app */,
+				F114F20117C6C14000903F79 /* InSpaceJobsTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F114F1CF17C6C14000903F79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F114F1D017C6C14000903F79 /* UIKit.framework */,
+				F114F1D217C6C14000903F79 /* Foundation.framework */,
+				F114F1D417C6C14000903F79 /* CoreGraphics.framework */,
+				F114F20217C6C14000903F79 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F114F1D617C6C14000903F79 /* InSpaceJobs */ = {
+			isa = PBXGroup;
+			children = (
+				F114F1DF17C6C14000903F79 /* ISJAppDelegate.h */,
+				F114F1E017C6C14000903F79 /* ISJAppDelegate.m */,
+				F114F1E817C6C14000903F79 /* MainStoryboard_iPhone.storyboard */,
+				F114F1EB17C6C14000903F79 /* MainStoryboard_iPad.storyboard */,
+				F114F1EE17C6C14000903F79 /* ISJFirstViewController.h */,
+				F114F1EF17C6C14000903F79 /* ISJFirstViewController.m */,
+				F114F1F117C6C14000903F79 /* first.png */,
+				F114F1F317C6C14000903F79 /* first@2x.png */,
+				F114F1F517C6C14000903F79 /* ISJSecondViewController.h */,
+				F114F1F617C6C14000903F79 /* ISJSecondViewController.m */,
+				F114F1F817C6C14000903F79 /* second.png */,
+				F114F1FA17C6C14000903F79 /* second@2x.png */,
+				F114F1D717C6C14000903F79 /* Supporting Files */,
+			);
+			path = InSpaceJobs;
+			sourceTree = "<group>";
+		};
+		F114F1D717C6C14000903F79 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F114F1D817C6C14000903F79 /* InSpaceJobs-Info.plist */,
+				F114F1D917C6C14000903F79 /* InfoPlist.strings */,
+				F114F1DC17C6C14000903F79 /* main.m */,
+				F114F1DE17C6C14000903F79 /* InSpaceJobs-Prefix.pch */,
+				F114F1E217C6C14000903F79 /* Default.png */,
+				F114F1E417C6C14000903F79 /* Default@2x.png */,
+				F114F1E617C6C14000903F79 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F114F20817C6C14000903F79 /* InSpaceJobsTests */ = {
+			isa = PBXGroup;
+			children = (
+				F114F20E17C6C14000903F79 /* InSpaceJobsTests.h */,
+				F114F20F17C6C14000903F79 /* InSpaceJobsTests.m */,
+				F114F20917C6C14000903F79 /* Supporting Files */,
+			);
+			path = InSpaceJobsTests;
+			sourceTree = "<group>";
+		};
+		F114F20917C6C14000903F79 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F114F20A17C6C14000903F79 /* InSpaceJobsTests-Info.plist */,
+				F114F20B17C6C14000903F79 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F114F1CB17C6C14000903F79 /* InSpaceJobs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F114F21317C6C14000903F79 /* Build configuration list for PBXNativeTarget "InSpaceJobs" */;
+			buildPhases = (
+				F114F1C817C6C14000903F79 /* Sources */,
+				F114F1C917C6C14000903F79 /* Frameworks */,
+				F114F1CA17C6C14000903F79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InSpaceJobs;
+			productName = InSpaceJobs;
+			productReference = F114F1CC17C6C14000903F79 /* InSpaceJobs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F114F20017C6C14000903F79 /* InSpaceJobsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F114F21617C6C14000903F79 /* Build configuration list for PBXNativeTarget "InSpaceJobsTests" */;
+			buildPhases = (
+				F114F1FC17C6C14000903F79 /* Sources */,
+				F114F1FD17C6C14000903F79 /* Frameworks */,
+				F114F1FE17C6C14000903F79 /* Resources */,
+				F114F1FF17C6C14000903F79 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F114F20717C6C14000903F79 /* PBXTargetDependency */,
+			);
+			name = InSpaceJobsTests;
+			productName = InSpaceJobsTests;
+			productReference = F114F20117C6C14000903F79 /* InSpaceJobsTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F114F1C317C6C14000903F79 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ISJ;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "VisionSpace Technologies";
+			};
+			buildConfigurationList = F114F1C617C6C14000903F79 /* Build configuration list for PBXProject "InSpaceJobs" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F114F1C117C6C14000903F79;
+			productRefGroup = F114F1CD17C6C14000903F79 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F114F1CB17C6C14000903F79 /* InSpaceJobs */,
+				F114F20017C6C14000903F79 /* InSpaceJobsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F114F1CA17C6C14000903F79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F114F1DB17C6C14000903F79 /* InfoPlist.strings in Resources */,
+				F114F1E317C6C14000903F79 /* Default.png in Resources */,
+				F114F1E517C6C14000903F79 /* Default@2x.png in Resources */,
+				F114F1E717C6C14000903F79 /* Default-568h@2x.png in Resources */,
+				F114F1EA17C6C14000903F79 /* MainStoryboard_iPhone.storyboard in Resources */,
+				F114F1ED17C6C14000903F79 /* MainStoryboard_iPad.storyboard in Resources */,
+				F114F1F217C6C14000903F79 /* first.png in Resources */,
+				F114F1F417C6C14000903F79 /* first@2x.png in Resources */,
+				F114F1F917C6C14000903F79 /* second.png in Resources */,
+				F114F1FB17C6C14000903F79 /* second@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F114F1FE17C6C14000903F79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F114F20D17C6C14000903F79 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F114F1FF17C6C14000903F79 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F114F1C817C6C14000903F79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F114F1DD17C6C14000903F79 /* main.m in Sources */,
+				F114F1E117C6C14000903F79 /* ISJAppDelegate.m in Sources */,
+				F114F1F017C6C14000903F79 /* ISJFirstViewController.m in Sources */,
+				F114F1F717C6C14000903F79 /* ISJSecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F114F1FC17C6C14000903F79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F114F21017C6C14000903F79 /* InSpaceJobsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F114F20717C6C14000903F79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F114F1CB17C6C14000903F79 /* InSpaceJobs */;
+			targetProxy = F114F20617C6C14000903F79 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F114F1D917C6C14000903F79 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F114F1DA17C6C14000903F79 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F114F1E817C6C14000903F79 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F114F1E917C6C14000903F79 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		F114F1EB17C6C14000903F79 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F114F1EC17C6C14000903F79 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		F114F20B17C6C14000903F79 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F114F20C17C6C14000903F79 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F114F21117C6C14000903F79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F114F21217C6C14000903F79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F114F21417C6C14000903F79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InSpaceJobs/InSpaceJobs-Prefix.pch";
+				INFOPLIST_FILE = "InSpaceJobs/InSpaceJobs-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F114F21517C6C14000903F79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InSpaceJobs/InSpaceJobs-Prefix.pch";
+				INFOPLIST_FILE = "InSpaceJobs/InSpaceJobs-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F114F21717C6C14000903F79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/InSpaceJobs.app/InSpaceJobs";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InSpaceJobs/InSpaceJobs-Prefix.pch";
+				INFOPLIST_FILE = "InSpaceJobsTests/InSpaceJobsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		F114F21817C6C14000903F79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/InSpaceJobs.app/InSpaceJobs";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InSpaceJobs/InSpaceJobs-Prefix.pch";
+				INFOPLIST_FILE = "InSpaceJobsTests/InSpaceJobsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F114F1C617C6C14000903F79 /* Build configuration list for PBXProject "InSpaceJobs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F114F21117C6C14000903F79 /* Debug */,
+				F114F21217C6C14000903F79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F114F21317C6C14000903F79 /* Build configuration list for PBXNativeTarget "InSpaceJobs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F114F21417C6C14000903F79 /* Debug */,
+				F114F21517C6C14000903F79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F114F21617C6C14000903F79 /* Build configuration list for PBXNativeTarget "InSpaceJobsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F114F21717C6C14000903F79 /* Debug */,
+				F114F21817C6C14000903F79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F114F1C317C6C14000903F79 /* Project object */;
+}
