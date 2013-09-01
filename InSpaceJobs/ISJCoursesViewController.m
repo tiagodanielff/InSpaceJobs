@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 VisionSpace Technologies. All rights reserved.
 //
 
-#import "ISJSecondViewController.h"
+#import "ISJCoursesViewController.h"
 
-@interface ISJSecondViewController ()
+@interface ISJCoursesViewController ()
 
 @end
 
-@implementation ISJSecondViewController
+@implementation ISJCoursesViewController
 
 - (void)viewDidLoad
 {

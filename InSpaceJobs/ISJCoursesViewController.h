@@ -1,5 +1,5 @@
 //
-//  ISJFirstViewController.h
+//  ISJSecondViewController.h
 //  InSpaceJobs
 //
 //  Created by Tiago Daniel Cachulo Carvalho on 8/22/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ISJFirstViewController : UIViewController
+@interface ISJCoursesViewController : UIViewController
 
 @end
