@@ -14,9 +14,8 @@
 
 @interface ISJJobsViewController ()
 {
-    NSArray *JobListTableViewData;
     NSMutableArray *_objects;
-    NSMutableArray *_contributors;
+
 }
 
 @end
@@ -29,20 +28,11 @@
 {
     [super viewDidLoad];
     
-   self.JobListTableView.dataSource=self;
-   self.JobListTableView.delegate=self;
-
-    
-    JobListTableViewData = [NSArray arrayWithObjects:@"AOCS Engineer", @"MCS Developer", @"Simulations Officer", @"Operations Manager", @"Flight Dynamics Engineer", @"Propulsion Systems Engineer", @"Configuration Control Support Engineer", @"Data Systems Engineer", @"Spacecraft Operations Manager", @"Ground Operations Manager", @"Spacecraft Database Engineer", @"Financial Administrator", @"Contract Manager", @"Markteer", @"Systems Engineer", @"EGSE Engineer", nil];
-    
-    [self loadHTMLParser];
+    self.JobListTableView.dataSource=self;
+    self.JobListTableView.delegate=self;
 
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-    {
-        return [JobListTableViewData count];
-    }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -112,6 +102,11 @@
     // 8
     _objects = newparserJob;
     [self.JobListTableView reloadData];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [_objects count];
 }
 
 - (void)didReceiveMemoryWarning
