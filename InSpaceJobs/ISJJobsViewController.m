@@ -49,7 +49,6 @@
     static NSString *CellIdentifier = @"Cell";
 
     customCell01 *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
 
     
     if (cell == nil) {
@@ -57,36 +56,13 @@
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     
-//    if (cell == nil) {
-//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
-//        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-//    }
     
     parserJob *jobs = [_objects objectAtIndex:indexPath.row];
     cell.cellJobTitle.text = jobs.jobTitle;
-    cell.cellJobEmployee.text = jobs.jobEmployee;
+    cell.cellJobEmployee.text = @"VisionSpace Technologies";
     cell.cellJobLocation.text = @"Darmstadt (Germany)";
     cell.cellThumbEmployee.image = [UIImage imageNamed:@"logo_company_42x42.png"];
-//    cell.jobTitleInCell.text = jobs.jobTitle;
-//    cell.jobLocationInCell.text = jobs.url;
-//    cell.jobImage.image = [UIImage imageNamed:@"Logovertical.png"];
-    
-//    cell.textLabel.text = jobs.jobTitle;
-//    cell.detailTextLabel.text = jobs.url;
-//    cell.imageView.image = [UIImage imageNamed:@"Logovertical.png"];
-    
-    
-// Initial code by TDCC
-//    static NSString *simpleTableIdentifier = @"SimpleTableItem";
-    
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
-    
-//    if (cell == nil) {
-//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
-//    }
-    
-//    cell.textLabel.text = [JobListTableViewData objectAtIndex:indexPath.row];
-//    cell.imageView.image = [UIImage imageNamed:@"Logovertical.png"];
+
     return cell;
 }
 
