@@ -6,10 +6,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "customCell01.h"
+
+
 
 @interface ISJJobsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *JobListTableView;
+
 
 
 @end

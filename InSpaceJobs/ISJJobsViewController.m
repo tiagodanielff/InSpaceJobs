@@ -5,12 +5,18 @@
 //  Created by Tiago Daniel Cachulo Carvalho on 8/22/13.
 //  Copyright (c) 2013 VisionSpace Technologies. All rights reserved.
 //
+// O parser foi implementado a partir do exemplo disponivel em: http://www.raywenderlich.com/14172/how-to-parse-html-on-ios
 
 #import "ISJJobsViewController.h"
+#import "TFHpple.h"
+#import "parserJob.h"
+
 
 @interface ISJJobsViewController ()
 {
     NSArray *JobListTableViewData;
+    NSMutableArray *_objects;
+    NSMutableArray *_contributors;
 }
 
 @end
@@ -23,32 +29,113 @@
 {
     [super viewDidLoad];
     
-    self.JobListTableView.dataSource=self;
-    self.JobListTableView.delegate=self;
+   self.JobListTableView.dataSource=self;
+   self.JobListTableView.delegate=self;
+
     
     JobListTableViewData = [NSArray arrayWithObjects:@"AOCS Engineer", @"MCS Developer", @"Simulations Officer", @"Operations Manager", @"Flight Dynamics Engineer", @"Propulsion Systems Engineer", @"Configuration Control Support Engineer", @"Data Systems Engineer", @"Spacecraft Operations Manager", @"Ground Operations Manager", @"Spacecraft Database Engineer", @"Financial Administrator", @"Contract Manager", @"Markteer", @"Systems Engineer", @"EGSE Engineer", nil];
+    
+    [self loadHTMLParser];
 
 }
-
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return [JobListTableViewData count];
-}
+    {
+        return [JobListTableViewData count];
+    }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *simpleTableIdentifier = @"SimpleTableItem";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    static NSString *CellIdentifier = @"Cell";
+
+    customCell01 *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+
     
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+        cell = [[customCell01 alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     
-    cell.textLabel.text = [JobListTableViewData objectAtIndex:indexPath.row];
-    cell.imageView.image = [UIImage imageNamed:@"Logovertical.png"];
+//    if (cell == nil) {
+//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+//        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+//    }
+    
+    parserJob *jobs = [_objects objectAtIndex:indexPath.row];
+    cell.cellJobTitle.text = jobs.jobTitle;
+    cell.cellJobEmployee.text = jobs.jobEmployee;
+    cell.cellJobLocation.text = @"Darmstadt (Germany)";
+    cell.cellThumbEmployee.image = [UIImage imageNamed:@"logo_company_42x42.png"];
+//    cell.jobTitleInCell.text = jobs.jobTitle;
+//    cell.jobLocationInCell.text = jobs.url;
+//    cell.jobImage.image = [UIImage imageNamed:@"Logovertical.png"];
+    
+//    cell.textLabel.text = jobs.jobTitle;
+//    cell.detailTextLabel.text = jobs.url;
+//    cell.imageView.image = [UIImage imageNamed:@"Logovertical.png"];
+    
+    
+// Initial code by TDCC
+//    static NSString *simpleTableIdentifier = @"SimpleTableItem";
+    
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
+    
+//    if (cell == nil) {
+//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+//    }
+    
+//    cell.textLabel.text = [JobListTableViewData objectAtIndex:indexPath.row];
+//    cell.imageView.image = [UIImage imageNamed:@"Logovertical.png"];
     return cell;
+}
+
+// Alternate the color of the cells in tableView
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    if (indexPath.row%2 == 0) {
+        
+        UIColor *altCellColor = [UIColor colorWithWhite:0.7 alpha:0.2];
+        
+        cell.backgroundColor = altCellColor;
+        
+    }
+    
+}
+
+-(void)loadHTMLParser {
+    // 1
+    NSURL *parserJobsUrl = [NSURL URLWithString:@"http://www.space-careers.com/alljobs.html"];
+    NSData *parserJobsHtmlData = [NSData dataWithContentsOfURL:parserJobsUrl];
+    
+    // 2
+    TFHpple *parserJobsParser = [TFHpple hppleWithHTMLData:parserJobsHtmlData];
+    
+    // 3
+    NSString *parserJobsXpathQueryString = @"//div[@class='lastJobsJob']/a";
+    NSArray *parserJobsNodes = [parserJobsParser searchWithXPathQuery:parserJobsXpathQueryString];
+    
+    // 4
+    NSMutableArray *newparserJob = [[NSMutableArray alloc] initWithCapacity:0];
+    for (TFHppleElement *element in parserJobsNodes) {
+        // 5
+        parserJob *parserJobE = [[parserJob alloc] init];
+        [newparserJob addObject:parserJobE];
+        
+        // 6 
+        parserJobE.jobTitle = [[element firstChild] content];
+        parserJobE.jobEmployee = [[element parent] content];
+        parserJobE.jobLocation = [[element firstChild] content];
+        
+        // 7
+        parserJobE.jobUrl = [element objectForKey:@"href"];
+        
+        
+    }
+    
+    // 8
+    _objects = newparserJob;
+    [self.JobListTableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning
